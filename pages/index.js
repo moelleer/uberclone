@@ -4,9 +4,13 @@ function App() {
   const [restaurants, setRestaurants] = useState([])
 
   useEffect(() => {
-    return fetch("api/restaurants")
-      .then((response) => response.json())
-      .then((json) => setRestaurants(json.restaurants))
+    async function getRestaurants() {
+      const response = await fetch("api/restaurants")
+      const json = await response.json()
+      setRestaurants(json.restaurants)
+    }
+
+    getRestaurants()
   }, [])
 
   return (
