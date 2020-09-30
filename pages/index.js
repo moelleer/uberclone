@@ -129,10 +129,10 @@ function App() {
 function CardSkeleton() {
   return (
     <div>
-      <div className="w-full h-64 bg-gray-500 rounded animate-pulse translate-3d-none-after"></div>
+      <div className="w-full h-64 bg-gray-500 rounded animate-pulse"></div>
       <div className="flex items-center justify-between mt-3">
         <div className="flex flex-col">
-          <span className="w-64 h-6 text-lg font-semibold bg-gray-500 rounded animate-pulse" />
+          <span className="w-64 h-6 text-lg bg-gray-500 rounded animate-pulse" />
           <span className="w-32 h-3 mt-3 text-sm bg-gray-500 rounded animate-pulse" />
         </div>
         <span className="flex items-center justify-center text-sm font-semibold bg-gray-500 rounded-full h-9 w-9 animate-pulse" />
